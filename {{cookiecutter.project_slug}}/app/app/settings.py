@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = bool(int(os.environ.get('DEBUG', 0)))
 
 ALLOWED_HOSTS = []
-ALLOWED_HOSTS.extend(filter(None, os.environ.get('ALLOWED_HOST', '').split(',')))
+ALLOWED_HOSTS.extend(filter(None, os.environ.get('ALLOWED_HOSTS', '').split(',')))
 
 # Application definition
 
@@ -121,6 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# Change default url for nginx
 STATIC_URL = '/static/static/'
 MEDIA_URL = '/static/media/'
 
