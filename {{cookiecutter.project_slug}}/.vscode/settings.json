@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "/Users/maru/.pyenv/versions/3.9.5/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,   
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.formatOnSave": true
+    },
+    "python.linting.flake8Args": [
+        "--max-line-length=100",
+        "--extend-ignore=E203,W503"
+    ],
+    "python.formatting.blackArgs": [
+        "--skip-string-normalization",
+    ]
+}
