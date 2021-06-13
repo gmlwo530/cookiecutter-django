@@ -35,12 +35,14 @@ Run in production
   
 ## Roadmap
 
-[ ] coverage
-[ ] CI
-[ ] CD
-[ ] MySQL
-[ ] No docker
-[ ] Django Rest Framework
+- [ ] coverage
+- [ ] CI
+- [ ] CD
+- [ ] MySQL
+- [ ] No docker
+- [ ] Django Rest Framework
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
