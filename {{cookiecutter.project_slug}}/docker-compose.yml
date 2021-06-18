@@ -21,8 +21,10 @@ services:
       - DB_NAME=devdb
       - DB_USER=devuser
       - DB_PASS=changeme
-    depends_on: 
+      - DEFAULT_REDIS_URL=redis://redis:6379/1
+    depends_on:
       - db
+      - redis
 
   db:
     image: postgres:13-alpine
@@ -30,3 +32,7 @@ services:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
       - POSTGRES_PASSWORD=changeme
+
+  redis:
+    image: redis:alpine3.13
+    container_name: redis

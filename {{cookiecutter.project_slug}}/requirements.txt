@@ -2,3 +2,9 @@ Django>=3.2.4,<3.3
 psycopg2>=2.8.6,<2.9
 uWSGI>=2.0.19.1,<2.1
 coverage>=5.5,<5.6
+
+redis>=3.5.3,<3.6
+django-redis>=5.0.0<5.1
+
+pytest>=6.2.4,<6.3
+pytest-django>=4.4.0,<4.5
